@@ -1,0 +1,98 @@
+/* importar a fonte do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap'); /* Fonte para os Titulos */ 
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mozilla+Headline:wght@200..700&display=swap'); /* Fonte para o corpo */
+ 
+
+/* resete basico */
+*{
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Conf. para todo o corpo do site */
+body{ 
+    text-align: center; 
+    background-color: #000814 ;
+}
+
+header{ 
+    color: rgb(78, 7, 19); 
+    padding: 20px; 
+    font-family: 'Metamorphous';
+   /* alterei a fonte do titulo principal usando a fonte que exportei do google fonts*/
+}
+
+/* Menu de navegaçao*/
+nav a{
+    text-decoration: none; /* Tira a decoração do texto */ 
+    color: antiquewhite;
+    background-color: #0a1128;
+    display: inline-block; /* deixa os itens lado a lado */ 
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 10px; /* para deixar as bordas arredondadas */
+    font-family: 'Metamorphous'; /* alteração da fonte */
+}
+nav a:hover{ /* siginifica: quando o mouse passar por cima de tal conteudo (nav) ele vai mudar de cor, nesse caso a cor vai ficar mais clara e ira aumentar de tamanho */
+    background-color: #660708;
+    font-size: 25px;
+}
+
+/*Article dos cards dos personagens */
+.card-personagem{
+    width: 250px;
+    display: inline-block; /* deixando os itens lado a lado */
+    margin: 20px;
+    padding: 10px 20px ;
+    background-color: #0a1128;
+    border-radius: 10px;
+    text-align: center;
+}
+.card-personagem img{
+    width: 100%; /* para deixar tudo do mesmo tamanho sem precisar mudar toda hora*/
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover; /* para a imagem nao ficar sem qualidade/distorcida */
+}
+
+#personagens{ 
+    background-image: url(./imagens/banner/banner-serie.webp);
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* alterar o tamanho da imagem - background-size = cover ou contain */
+    /* nao repetir a imagem varias vezes - background-repeat: no-repeat ou repeat*/
+    /* para mudar a posiçao da imagem - background-position: center */
+}
+h2{ 
+    font-family: 'Metamorphous'; /* alteração da fonte */
+    color: rgb(78, 7, 19); 
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding-top: 5px;
+}
+#sessao-cenas{ 
+
+}
+
+.cenas{
+    width: 250px;
+    display: inline-block; /* deixando os itens lado a lado */
+    margin: 20px;
+    padding: 10px 20px ;
+    background-color: #0a1128;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 35px;
+}
+.cenas img{ 
+    width: 100%; /* para deixar tudo do mesmo tamanho sem precisar mudar toda hora*/
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover; /* para a imagem nao ficar sem qualidade/distorcida */
+}
+
+footer{ 
+    color: aliceblue;
+}
