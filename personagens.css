@@ -1,0 +1,23 @@
+/* importar a fonte do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap'); /* Fonte para os Titulos */ 
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mozilla+Headline:wght@200..700&display=swap'); /* Fonte para o corpo */
+ 
+
+/* resete basico */
+*{
+    box-sizing: border-box; 
+    margin: 0%;
+    padding: 0%;
+}
+
+/*Conf. para todo o corpo do site */
+body{ 
+    text-align: center; 
+    background-color: #000814 ;
+}
+
+
+
+
+
+

@@ -48,6 +48,7 @@ nav a:hover{ /* siginifica: quando o mouse passar por cima de tal conteudo (nav)
     background-color: #0a1128;
     border-radius: 10px;
     text-align: center;
+    color: white;
 }
 .card-personagem img{
     width: 100%; /* para deixar tudo do mesmo tamanho sem precisar mudar toda hora*/
@@ -73,6 +74,10 @@ h2{
     padding-top: 5px;
 }
 #sessao-cenas{ 
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: 'Metamorphous';
+    font-size: 20px;
 
 }
 
@@ -85,6 +90,7 @@ h2{
     border-radius: 10px;
     text-align: center;
     margin-top: 35px;
+    color: aliceblue;
 }
 .cenas img{ 
     width: 100%; /* para deixar tudo do mesmo tamanho sem precisar mudar toda hora*/
@@ -95,4 +101,9 @@ h2{
 
 footer{ 
     color: aliceblue;
+    background-color: #0a1128;
+    text-align: end;
+    padding: 30px;
+    text-decoration: none;
+
 }
