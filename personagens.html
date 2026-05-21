@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Personagens</title>
+
+    <link rel="stylesheet" href="./style.css"> 
     <link rel="stylesheet" href="./personagens.css"> 
     <link rel="shortcut icon" href="./imagens/guia-icon/favicon.png" type="image/x-icon"> <!-- Configuração para modificar o icone da guia -->
 
@@ -24,90 +26,92 @@
         </nav>
     </header>
     <main> 
-        <section id="personas">
-            <h2> Personagens </h2>
-            <div class="container-personas"> </div>
+        <section id="personas"> <!-- Sessao de personagens-->
+            <h2 id="h2-sessao-titulo"> Personagens </h2> <!-- Titulo principal da pagina-->
+            <div class="container-personas"> <!-- Container para os cards-->
 
-            <div class="itens-externo">
+            <div class="itens"> <!-- Cards com os personagens 1 -->
                 <img src="./imagens/personagens-cards/card-clay/Clay Jensen.jfif" alt="clay"> 
-                <p> N°001</p>
-                <h3> Clay Jensen </h3>
+                <p id="itens-p"> N°001</p>
+                <h3 class="itens-h3"> Clay Jensen </h3>
                 <div class="card-interno"> 
-                    <span> 11ª fita </span>
-                    <span> Dylan </span>
+                    <span class="tag card-interno-fitas"> 11ª fita </span> 
+                    <span class="tag card-interno-nome"> Dylan </span>
+                    <!--DIVIDINDO O COMANDO DE CSS COM TAG--> 
+                    <!-- O 'TAG' SERVE COMO SE FOSSE UM CONTAINER NO SPAN NO CSS, PODENDO DAR CARACTERISTICAS PRA TODOS DE UMA VEZ, DEPOIS, COLOCANDO APENAS O 'CARD-XXXX' DA PARA DAR CARACTERISTICAS MAIS ESPECIFICAS/-->
                 </div>
             </div>
 
-            <div class="itens">
+            <div class="itens"> <!-- Cards com os personagens 2 -->
                 <img src="./imagens/personagens-cards/card-hannah/hannah backer.jpg" alt="hannah"> 
-                <p> N°002 </p>
-                <h3> Hannah Backer </h3>
+                <p id="itens-p"> N°002 </p>
+                <h3 class="itens-h3"> Hannah Backer </h3>
                 <div class="card-interno"> 
-                    <span> Autora das Fitas </span>
-                    <span> Katherine </span>
+                    <span class="tag card-interno-fitas"> Autora das Fitas </span>
+                    <span class="tag card-interno-nome"> Katherine </span>
                 </div>
             </div>
-
-            <div class="itens">
+ 
+            <div class="itens"> <!-- Cards com os personagens 3 -->
                 <img src="./imagens/personagens-cards/card-jessica/Jessica Davis.jfif" alt="jessica"> 
-                <p> N°003 </p>
-                <h3> Jessica Devis </h3>
+                <p id="itens-p"> N°003 </p>
+                <h3 class="itens-h3"> Jessica Devis </h3>
                 <div class="card-interno"> 
-                    <span> 09ª fita </span>
-                    <span> Alisha </span>
+                    <span class="tag card-interno-fitas"> 09ª fita </span>
+                    <span class="tag card-interno-nome"> Alisha </span>
                 </div>
-            </div>
+            </div> 
 
-            <div class="itens">
+            <div class="itens"> <!-- Cards com os personagens 4 -->
                 <img src="./imagens/personagens-cards/card-justin/Justin Foley.jfif" alt="justin"> 
-                <p> N°004</p>
-                <h3> Justin Foley </h3>
+                <p id="itens-p"> N°004</p>
+                <h3 class="itens-h3"> Justin Foley </h3>
                 <div class="card-interno"> 
-                    <span> 01ª fita </span>
-                    <span> Brandon </span>
+                    <span class="tag card-interno-fitas"> 01ª fita </span>
+                    <span class="tag card-interno-nome"> Brandon </span>
                 </div>
             </div>
 
-            <div class="itens">
+            <div class="itens"> <!-- Cards com os personagens 5 -->
                 <img src="./imagens/personagens-cards/card-tony/Tony Padilla.jfif" alt="Tony"> 
-                <p> N°005 </p>
-                <h3> Tony Padilla </h3>
+                <p id="itens-p"> N°005 </p>
+                <h3 class="itens-h3"> Tony Padilla </h3>
                 <div class="card-interno"> 
-                    <span> Guardião das Fitas </span>
-                    <span> Christian </span>
+                    <span class="tag card-interno-fitas"> Guardião das Fitas </span>
+                    <span class="tag card-interno-nome"> Christian </span>
                 </div>
             </div>
 
-            <div class="itens">
+            <div class="itens"> <!-- Cards com os personagens  6-->
                 <img src="./imagens/personagens-cards/card-tyler/Tyler Down.jfif" alt="tyler"> 
-                <p> N°006 </p>
-                <h3> Tyler Down </h3>
+                <p id="itens-p"> N°006 </p>
+                <h3 class="itens-h3"> Tyler Down </h3>
                 <div class="card-interno"> 
-                    <span> 04ª fita</span>
-                    <span> Devin </span>
+                    <span class="tag card-interno-fitas"> 04ª fita</span>
+                    <span class="tag card-interno-nome"> Devin </span>
                 </div>
             </div>
 
-            <div class="itens">
+            <div class="itens"> <!-- Cards com os personagens  7-->
                 <img src="./imagens/personagens-cards/card-zach/Zach Dempsey (2).jfif" alt="zach"> 
-                <p> N°007 </p>
-                <h3> Zach Dempsey </h3>
+                <p id="itens-p"> N°007 </p>
+                <h3 class="itens-h3"> Zach Dempsey </h3>
                 <div class="card-interno"> 
-                    <span> 07ª fita </span>
-                    <span> Ross </span>
+                    <span class="tag card-interno-fitas"> 07ª fita </span>
+                    <span class="tag card-interno-nome"> Ross </span>
                 </div>
             </div>
 
-            <div class="itens">
+            <div class="itens"> <!-- Cards com os personagens 8 -->
                 <img src="./imagens/personagens-cards/card-ani/Ani Achola.jfif" alt="ani"> 
-                <p> N°008 </p>
-                <h3> Ani Achola </h3>
+                <p id="itens-p"> N°008 </p>
+                <h3 class="itens-h3"> Ani Achola </h3>
                 <div class="card-interno"> 
-                    <span> Narradora 3°Temp </span>
-                    <span> Grace </span>
+                    <span class="tag card-interno-fitas"> Narradora 3°Temp </span>
+                    <span class="tag card-interno-nome"> Grace </span>
                 </div>
             </div>
-
+        </div>
 
         </section>
     </main>

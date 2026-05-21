@@ -1,6 +1,13 @@
 /* importar a fonte do google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap'); /* Fonte para os Titulos */ 
 @import url('https://fonts.googleapis.com/css2?family=Metamorphous&family=Mozilla+Headline:wght@200..700&display=swap'); /* Fonte para o corpo */
+
+/*cores para o site 
+  background-color: #000814 ; AZUL ESCURO
+   color: rgb(78, 7, 19); VERMELHO
+    background-color: #0a1128; AZUL CLARO
+
+}*/
  
 
 /* resete basico */
@@ -12,12 +19,128 @@
 
 /*Conf. para todo o corpo do site */
 body{ 
-    text-align: center; 
-    background-color: #000814 ;
+    
+    background-color: aliceblue;
+}
+
+/* SESSAO DE TUDO */
+#personas{
+    background-color: white;
+    padding: 40px 20px ; /* espaçamento internos */
+}
+
+/* TITULO DA SESSAO */
+#h2-sessao-titulo{ 
+    color: rgb(78, 7, 19); 
+    font-family: 'Metamorphous';
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 
+/* CONTAINER DOS CARDS */
+.container-personas{ 
+    display: flex;
+    flex-wrap: wrap; /* QUEBRA DE LINHA CASO NAO HOUVER ESPAÇAMENTO SUFICIENTE */
+    justify-content: center;
+    align-items: stretch; /* ELE IRA DEIXAR OS ITENS COM A MESMA ALTURA, "ESTICANDO" COM O TAMANHO DO CONTAINER*/
+    gap: 30px ; /* ESPAÇAMENYTO ENTRE OS PROPRIOS ITENS (cards) (diferente do padding */
+}
+
+/* CARD DE PERSONAGENS */
+.itens{ 
+    width: 260px ;
+    background-color: #0a1128;
+    border-radius: 20px;
+    padding: 20px;
 
 
+    display: flex ; /* ativa o flexbox*/
+    flex-direction: column; /* ativa o comportamento de coluna */
+    justify-content:space-between; /* alinha os itens da caixa no eixo principal, que é na vertical, pois, esta em coluna*/
+
+}
+
+/*MOVIMENTO NO CARD */
+/* active - para ativar uma animação ao clicar */
+/* houver - para ativar quando passar o mouse por cima da caixa */
+
+.itens:hover{ 
+    transform: translateY(-30px); /* para a caixa de mexer conforme a direçção do eixo, y ou x */
+    box-shadow: 0 0 20px #0a1128; /* para a caixa ter uma sombra */
+
+}
+
+.tag:active{
+    background-color: #212530; 
+
+}
+
+/* CARD PERSONAGENS NA IMAGEM */
+.itens img{ 
+    width: 220px;
+    height: 200px;
+
+    object-fit: cover; /* evitar a distorção da imagem*/
+    border-radius: 10px;
+    margin-bottom: 10px ;
+}
+
+/* PARAGRAGO DENTRO DO ITEN*/
+#itens-p{ 
+    color: #dfdfdf;
+    font-weight: 10px;
+    margin-bottom: 5px;
+}
+
+/* TITULO H3 */
+.itens-h3{ 
+    color: white;
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+/* CARDS DENTRO DA CAIXA PRINCIPAL */
+.card-interno{ 
+    display: flex;
+    flex-wrap: wrap; /* quebra de linha conforme o tamanho */
+    gap: 8px;
+    justify-content: center;
+
+}
+
+/*DIVIDINDO O COMANDO DE CSS COM TAG NOS SPAN-CARS INTERNOS*/
+/*O 'TAG' SERVE COMO SE FOSSE UM CONTAINER NO SPAN NO CSS, PODENDO DAR CARACTERISTICAS PRA TODOS DE UMA VEZ, DEPOIS, COLOCANDO APENAS O 'CARD-XXXX' DA PARA DAR CARACTERISTICAS MAIS ESPECIFICAS*/
+.tag{
+    color: #ffffff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold; /* largura da fonte*/
+    display: inline-block;
 
 
+}
+
+/* SPAN 1 - PARTICIPAÇÃO NA FITA */
+.card-interno-fitas{
+    background-color:#1b2d69
+}
+
+/* SPAN 2 - NOMES REAIS DOS ATORES */
+.card-interno-nome{ 
+    background-color:#3d4c83 ;
+}
+
+
+/* MEDIA QUERY */ /* comportamento */
+
+@media(max-width:600px){
+    #h2-sessao-titulo{
+        color: #0a1128;
+        font-size: 60px;
+    }
+    .itens{
+        max-width: 320px;
+    }
+}
